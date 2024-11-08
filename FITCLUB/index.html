@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--head starts-->
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MAKE YOUR BODY SHAPE</title>
 
-    <!-- font awesome link  -->
+    <!-- font link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- custom css file link  -->
@@ -15,14 +16,16 @@
 </head>
 
 <body>
+    <!-- header starts -->
     <header class="header">
         <nav>
-            <div class="nav_logo">
+            <div class="nav__logo">
                 <a href="#" class="logo">
                     <img src="imagens/logo.png" alt="">
                 </a>    
             </div>
-            <ul class="nav_links">
+    <!--nav with funcions-->
+            <ul class="nav__links">
                 <li class="link">
                     <a href="#home">home</a>
                 </li>
@@ -40,28 +43,37 @@
                 </li>
             </ul>    
         </nav>
+    
+    <!--icons cart, search and menu-->
         <div class="icons">
             <div class="fas fa-search" id="search-btn"></div>
             <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
         </div>
 
+    <!-- form box for search-->
         <div class="search-form">
             <input type="search" id="search-box" placeholder="search here...">
             <label for="search-box" class="fas fa-search"></label>
         </div>
 
+    <!--div for items of cart-->
         <div class="cart-items-container">
             <div class="cart-items">
             </div>
-            <a class="btn">checkout now</a>
+            <div class="cart-items-container-checkout">
+                <a class="btn">checkout now</a>
+            </div>
         </div>
     </header>
+    <!-- header ends -->
 
+    <!-- home starts-->
     <section class="home" id="home">
 
         <div class="content">
-        <span class="back_orange"></span>
-        <span class="back_orange header__blur"></span>
+        <span class="back__orange"></span>
+        <span class="back__orange header__blur"></span>
             <h4>BEST FITNESS IN THE TOWN</h4>
             <h3><span class="titulo">MAKE </span>YOUR BODY SHAPE</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat labore, sint cupiditate distinctio
@@ -74,67 +86,38 @@
             <img src="imagens/header.png">
 
         </div>
-
-
     </section>
+    <!-- home ends-->
 
-
-
-
-    <section class="section_container class_container">
-        <div class="class_image">
-            <span class="back_orange"></span>
-            <img src="imagens/class-1.jpg" alt="class" class="class_img-1" />
-            <img src="imagens/class-2.jpg" alt="class" class="class_img-2" />
+    <!--section of the info about gym-->
+    <section class="section__container class__container">
+        <div class="class__image">
+            <span class="back__orange"></span>
+            <img src="imagens/class-1.jpg" alt="class" class="class__img-1" />
+            <img src="imagens/class-2.jpg" alt="class" class="class__img-2" />
         </div>
-        <div class="class_content">
-            <h2 class="section_header">THE CLASS YOU WILL GET HERE</h2>
+        <div class="class__content">
+            <h2 class="section__header">THE CLASS YOU WILL GET HERE</h2>
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus ut placeat consequatur velit voluptates 
-                perspiciatis voluptate quod sit dolore, nobis odit, ducimus eveniet pariatur fugiat quas facilis officiis, 
-                magni delectus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis voluptates non ab illo libero 
+                iste explicabo cupiditate incidunt, odio laboriosam similique soluta aliquid reiciendis! Eaque, culpa! 
+                Impedit quam laudantium repudiandae.
             </p>
             <button class="btn">Book A Class</button>
         </div>
     </section>
+    <!-- section about gym ends-->
 
-    <div class="gym_image">
-        <img src="imagens/join.jpg" alt="Join" />
-        <div class="gym_grid">
-          <div class="gym_card">
-            <span><i class="ri-user-star-fill"></i></span>
-            <div class="gym_card__content">
-              <h4>Personal Trainer</h4>
-              <p>Unlock your potential with our expert Personal Trainers.</p>
-            </div>
-          </div>
-          <div class="gym_card">
-            <span><i class="ri-vidicon-fill"></i></span>
-            <div class="gym_card__content">
-              <h4>Practice Sessions</h4>
-              <p>Elevate your fitness with practice sessions.</p>
-            </div>
-          </div>
-          <div class="gym_card">
-            <span><i class="ri-building-line"></i></span>
-            <div class="gym_card__content">
-              <h4>Good Management</h4>
-              <p>Supportive management, for your fitness success.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section_container price_container">
-        <h2 class="section_header">OUR PRICING PLAN</h2>
-        <p class="section_subheader">
+    <!-- plans of the gym-->
+    <section class="section__container price__container">
+        <h2 class="section__header">OUR PRICING PLAN</h2>
+        <p class="section__subheader">
             Our pricing plan comes with various membership tiers, each tailored to
             cater to different preferences and fitness aspirations.
         </p>
-        <div class="price_grid">
-            <div class="price_card">
-                <div class="price_card__content">
+        <div class="price__grid">
+            <div class="price__card">
+                <div class="price__card__content">
                     <h4>Basic Plan</h4>
                     <h3>$16</h3>
                     <p>
@@ -146,10 +129,10 @@
                         At home workouts
                     </p>
                 </div>
-                <button class="btn price_btn">Join Now</button>
+                <button class="btn price__btn">Join Now</button>
             </div>
-            <div class="price_card">
-                <div class="price_card__content">
+            <div class="price__card">
+                <div class="price__card__content">
                     <h4>Weekly Plan</h4>
                     <h3>$25</h3>
                     <p>
@@ -165,10 +148,10 @@
                         At home workouts
                     </p>
                 </div>
-                <button class="btn price_btn">Join Now</button>
+                <button class="btn price__btn">Join Now</button>
             </div>
-            <div class="price_card">
-                <div class="price_card__content">
+            <div class="price__card">
+                <div class="price__card__content">
                     <h4>Monthly Plan</h4>
                     <h3>$45</h3>
                     <p>
@@ -192,38 +175,41 @@
                         Personal Training
                     </p>
                 </div>
-                <button class="btn price_btn">Join Now</button>
+                <button class="btn price__btn">Join Now</button>
             </div>
         </div>
     </section>
+    <!-- section about the plans ends-->
+
+    <!-- section with the menu starts-->
     <section class="menu" id="menu">
         <h1 class="heading"> our <span>menu</span> </h1>
         <div class="box-container">
-            <div class="box">
+            <div class="box product-box">
                 <img src="imagens/iten1.webp" alt="">
                 <h3>Whey Protein</h3>
-                <div class="price">$ 80.99 <span>90.99</span></div>
+                <div class="price">R$ 80.99 <span>90.99</span></div>
                 <a class="btn" onclick="addItemToCart(1)">add to cart</a>
             </div>
 
-            <div class="box">
+            <div class="box product-box">
                 <img src="imagens/iten2.webp" alt="">
                 <h3>Barrinhas YoPro</h3>
-                <div class="price">$ 15.99 <span>20.99</span></div>
+                <div class="price">R$ 15.99 <span>20.99</span></div>
                 <a class="btn" onclick="addItemToCart(2)">add to cart</a>
             </div>
 
-            <div class="box">
+            <div class="box product-box">
                 <img src="imagens/iten3.webp" alt="">
                 <h3>Pré treino 4B</h3>
-                <div class="price">$ 55.99 <span>70.99</span></div>
+                <div class="price">$55.99 <span>70.99</span></div>
                 <a class="btn" onclick="addItemToCart(3)">add to cart</a>
             </div>
-
         </div>
-
     </section>
+    <!--section with the menu ends-->
 
+    <!--review section starts-->
     <section class="review" id="review">
 
         <h1 class="heading"> customer's <span>review</span> </h1>
@@ -231,6 +217,7 @@
         <div class="box-container">
 
             <div class="box">
+                <img src="imagens/quote-img.png" alt="" class="quote">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi
                     nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus
                     vel? Nemo.</p>
@@ -246,6 +233,7 @@
             </div>
 
             <div class="box">
+                <img src="imagens/quote-img.png" alt="" class="quote">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi
                     nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus
                     vel? Nemo.</p>
@@ -261,6 +249,7 @@
             </div>
 
             <div class="box">
+                <img src="imagens/quote-img.png" alt="" class="quote">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi
                     nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus
                     vel? Nemo.</p>
@@ -274,15 +263,11 @@
                     <i class="fas fa-star-half-alt"></i>
                 </div>
             </div>
-
         </div>
-
     </section>
+    <!-- review section ends -->
 
-    <!-- review section_ ends -->
-
-    <!-- contact section_ starts  -->
-
+    <!-- contact section starts  -->
     <section class="contact" id="contact">
 
         <h1 class="heading"> <span>contact</span> us </h1>
@@ -313,8 +298,9 @@
         </div>
 
     </section>
-    <!-- footer section_ starts  -->
+    <!-- contats section ends-->
 
+    <!-- footer section starts  -->
     <section class="footer">
 
         <div class="share">
@@ -327,14 +313,13 @@
 
         <div class="links">
             <a href="#">home</a>
-            <a href="#">about</a>
+            <a href="#">services</a>
             <a href="#">menu</a>
-            <a href="#">products</a>
             <a href="#">review</a>
         </div>
     </section>
 
-    <!-- footer section_ ends -->
+    <!-- footer section ends -->
 
     <!-- custom js file link  -->
     <script src="js/script.js"></script>

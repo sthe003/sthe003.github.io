@@ -1,3 +1,4 @@
+//atribuindo IDs para os produtos
 let navbar = document.querySelector('.navbar');
 let products = [
     {
@@ -28,6 +29,7 @@ document.querySelector('#menu-btn').onclick = () =>{
     cartItem.classList.remove('active');
 }
 
+//funcao para deletar os itens do carrinho
 function removeItemFromCart(productId) {
     const item = document.querySelector(`.cart-item[data-id="${productId}"]`);
     if (item) {
@@ -35,10 +37,12 @@ function removeItemFromCart(productId) {
     }
 }
 
+//funcao para chamar os IDs, para atribuicao e contagem de itens
 function addItemToCart(productId) {
     const container = document.querySelector('.cart-items');
     let product = products.find(item => item.id == productId);
-
+    const cartContainer = document.querySelector('.cart-container');
+    
     if (product) {
 
         let existingItem = container.querySelector(`.cart-item[data-id="${productId}"]`);
@@ -64,11 +68,14 @@ function addItemToCart(productId) {
             container.insertAdjacentHTML('beforeend', itemHTML);
         }
 
+        const cartItems = cartContainer.querySelectorAll('.cart-item');
+
         const removeButton = container.querySelector(`.cart-item[data-id="${product.id}"] .remove-item`);
         removeButton.addEventListener('click', () => removeItemFromCart(product.id));
     }
 }
 
+//botoes de pesquisa, carrinho e navegacao
 let searchForm = document.querySelector('.search-form');
 
 document.querySelector('#search-btn').onclick = () =>{
@@ -90,3 +97,25 @@ window.onscroll = () =>{
     searchForm.classList.remove('active');
     cartItem.classList.remove('active');
 }
+
+
+//para scrollar o site com mais leveza 
+$(function(){
+    (function inicia(){
+       var altura_pagina = $("body").outerHeight(true);
+       var altura_janela = window.innerHeight;
+       var velocidade = 8000; 
+       var intervalo = 3 
+ 
+       $(this).scrollTop(0);
+ 
+       $('html, body').animate({
+          scrollTop: altura_pagina-altura_janela
+       }, (altura_pagina/500) * velocidade, "linear", function(){
+          setTimeout(function(){
+             inicia();
+          }, intervalo*1000);
+       });
+    }());
+ })
+
