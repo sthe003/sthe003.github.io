@@ -55,7 +55,7 @@ function addItemToCart(productId) {
         } else {
             const itemHTML = `
                 <div class="cart-item" data-id="${product.id}">
-                    <span class="fas fa-times remove-item"></span>
+                    <span class="fas fa-times remove-item" onclick="removeItemFromCart('${product.id}')"></span>
                     <img src="${product.imagePath}" alt="">
                     <div class="content">
                         <h3>${product.name}</h3>
