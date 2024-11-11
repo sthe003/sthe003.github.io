@@ -898,6 +898,7 @@ section{
     html{
         font-size: 50%;
     }
+    
 
 
 }
@@ -911,9 +912,10 @@ section{
         padding:1.5rem 2rem;
     }
 
-    section{
+    .section{
         padding:2rem;
     }
+    
 
 }
 
